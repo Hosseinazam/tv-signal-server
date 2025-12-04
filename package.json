@@ -1,0 +1,12 @@
+{
+  "name": "tv-signal-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "latest"
+  }
+}
