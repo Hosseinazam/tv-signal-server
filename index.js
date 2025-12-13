@@ -3,8 +3,11 @@ const express = require("express");
 const { Pool } = require("pg");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-
 const app = express();
+
+const cors = require("cors");
+app.use(cors());
+
 app.use(express.json());
 
 const JWT_SECRET = process.env.JWT_SECRET || "change_this_to_a_long_secret";
